@@ -146,7 +146,7 @@ function añadirInvitado(){
    newLi.appendChild(editar);
    newLi.appendChild(borrar);
 
-   if(norep(nombre)){
+   if(norep(nombre.innerHTML)){
     document.getElementById("invitedList").appendChild(newLi);
    }
 
