@@ -21,19 +21,11 @@ Completa todas las historias utilizando DOM
 1) Cómo Administrador del evento me confirme antes de borrar un invitado al evento para evitar cometer un error
 1) Cómo Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento ni añadir nombres vacios para evitar errores
 
-
-1) Comprobado manualmente que se pueden añadir nombres nuevos a la lista.
-1) Cómo Administrador del evento, querría poder confirmar invitados al evento para saber quien finalmente irá
-1) Cómo Administrador del evento poder editar el nombre de cada asistente al evento para corregir errores
-1) Cómo Administrador del evento querría poder filtrar los invitados para mostrar solo los que tienen confirmada la asistencia para visualizarlo mejor
-1) Cómo Administrador del evento, querría poder eliminar invitados al evento que se hayan dado de baja
-1) Cómo Administrador del evento me confirme antes de borrar un invitado al evento para evitar cometer un error
-1) Cómo Administrador del evento querría que no se pudiera repetir el nombre de un invitado al evento ni añadir nombres vacios para evitar errores
-Comprobado manualmente que se pueden añadir nombres nuevos a la lista.
-Comprobado manualmente que se puede confirmar quien irá finalmente.
-Comprobado manualmente que se pueden editar nombres y que no se podrán guardan con un nombre ya utilizado.
-Comprobado manualmente que se pueden filtrar los invitados para mostrar solo los que tienen su asistencia confirmada.
-Comprobado manualmente que se pueden eliminar invitados y que es necesaria una confirmación para que el invitado se borre.
-Comprobado manualmente que no se pueden usar nombres vacíos, ni añadir invitados con el mismo nombre que otros.
+*Comprobado manualmente que se pueden añadir nombres nuevos a la lista.
+*Comprobado manualmente que se puede confirmar quien irá finalmente.
+*Comprobado manualmente que se pueden editar nombres y que no se podrán guardan con un nombre ya utilizado.
+*Comprobado manualmente que se pueden filtrar los invitados para mostrar solo los que tienen su asistencia confirmada.
+*Comprobado manualmente que se pueden eliminar invitados y que es necesaria una confirmación para que el invitado se borre.
+*Comprobado manualmente que no se pueden usar nombres vacíos, ni añadir invitados con el mismo nombre que otros.
 
 
