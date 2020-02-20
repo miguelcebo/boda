@@ -1,4 +1,4 @@
-preestablecidos();
+//preestablecidos();
 document.getElementById("ocultar").addEventListener('change', ocultarmostrar);
 document.getElementById("enviar").addEventListener("click", añadirInvitado);
 
@@ -48,6 +48,8 @@ function ocultarmostrar(){
 function norep(nombre){
 
     let x = document.getElementsByTagName("span");
+    
+    nombre = nombre.trim();
 
     event.preventDefault();
     if(nombre != ""){
