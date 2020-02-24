@@ -9,20 +9,20 @@ function preestablecidos(){
     let borrar2 = document.getElementsByClassName("eliminar")[1];
 
     borrar1.addEventListener("click", function(){
-        borrar(borrar1);
+        borrarP(borrar1);
     }); 
     borrar2.addEventListener("click", function(){
-        borrar(borrar2);
+        borrarP(borrar2);
     });
 
     confirmado(document.getElementById("1"));
     confirmado(document.getElementById("2"));
 
     document.getElementsByTagName("button")[1].addEventListener("click", function(){
-        editar(document.getElementsByTagName("span")[0], document.getElementsByTagName("li")[0]);
+        editarS(document.getElementsByTagName("span")[0], document.getElementsByTagName("li")[0]);
     });
     document.getElementsByTagName("button")[3].addEventListener("click", function(){
-        editar(document.getElementsByTagName("span")[1], document.getElementsByTagName("li")[1]);
+        editarS(document.getElementsByTagName("span")[1], document.getElementsByTagName("li")[1]);
     });
 
 }
@@ -48,7 +48,12 @@ function ocultarmostrar(){
 function norep(nombre){
 
     let x = document.getElementsByTagName("span");
+
+    ultimo = nombre.length-1;
     
+    if(nombre[0] == " "||nombre[ultimo] == " "){
+        alert("No puedes introducir un nombre con espacios al principio ni al final.");
+    }
     nombre = nombre.trim();
 
     event.preventDefault();
@@ -69,7 +74,7 @@ function norep(nombre){
 }
 
     
-function editar(span, padre){
+function editarS(span, padre){
 
     let x = span.innerHTML;
     var crear = document.createElement("input");
@@ -89,7 +94,7 @@ function editar(span, padre){
       });
 }
 
-function borrar(boton){
+function borrarP(boton){
     
     if(confirm("¿Estás seguro de que quieres borrar el invitado?")){
         boton.parentElement.remove();
@@ -121,6 +126,11 @@ function añadirInvitado(){
    let editar = document.createElement("button");
    let borrar = document.createElement("button");
 
+   newLi.appendChild(nombre);
+   newLi.appendChild(etiqueta);
+   newLi.appendChild(editar);
+   newLi.appendChild(borrar);
+
    newLi.setAttribute("class", "noconfirmed")
    
    nombre.innerHTML = document.getElementById("nombre").value;
@@ -134,19 +144,16 @@ function añadirInvitado(){
   
    editar.innerHTML = "edit";
    editar.addEventListener("click", function(){
-        editar(nombre, newLi);
+        editarS(nombre, newLi);
    });
 
    
    borrar.innerHTML = "remove";
    borrar.addEventListener("click", function(){
-    borrar(borrar);
+    borrarP(borrar);
    });
 
-   newLi.appendChild(nombre);
-   newLi.appendChild(etiqueta);
-   newLi.appendChild(editar);
-   newLi.appendChild(borrar);
+  
 
    if(norep(nombre.innerHTML)){
     document.getElementById("invitedList").appendChild(newLi);
